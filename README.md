@@ -24,17 +24,14 @@ No GitHub da nossa equipe, você encontrará ferramentas, scripts e projetos vol
 Se você trabalha com **ciência de dados geoespaciais** ou está interessado em contribuir com projetos de **geoprocessamento**, este é o lugar certo! Explore nossos repositórios, abra *issues*, sugira melhorias ou faça um *fork* para contribuir com código.
 
 ## Contato
-Para mais informações sobre os projetos de geoprocessamento da WRI, entre em contato com a equipe de ciência de dados ou visite nosso [site oficial](https://wri.org).
+Para mais informações sobre os projetos de geoprocessamento da WRI, entre em contato com a equipe de ciência de dados ou visite nosso [site oficial](https://geowri.org).
 
+## Installing
 
+Instructions on installing RSGISLib:
 
-- 👋 Hi, I’m @geowri
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+```bash
+conda install -c conda-forge rsgislib
 
 <!---
 geowri/geowri is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
