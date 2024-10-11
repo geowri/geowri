@@ -33,54 +33,43 @@ Este script automatiza a instalação do Anaconda e a configuração de um ambie
 ### Etapas do Script:
 
 1. **Baixar a versão mais recente do instalador do Anaconda**  
-Aqui estamos baixando a versão de junho de 2024 do Anaconda para Linux (64-bit):
 
 ```bash
 wget https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
 ```
 
-2. **Alterar permissões do instalador**  
-Tornar o instalador executável:
+2. **Alterar permissões do instalador para torná-lo executável**  
 
 ```bash
 sudo chmod u+x Anaconda3-2024.06-1-Linux-x86_64.sh
 ```
 
-3. **Executar o script de instalação do Anaconda**  
-Certifique-se de seguir as instruções interativas:
+3. **Executar o script de instalação do Anaconda certifique-se de seguir as instruções interativas**
 
 ```bash
 ./Anaconda3-2024.06-1-Linux-x86_64.sh
 ```
 
 4. **Ativar o Anaconda no terminal**  
-Permite usar o Anaconda imediatamente após a instalação:
 
 ```bash
 source ~/anaconda3/bin/activate
 ```
 
-5. **Validar a instalação do conda**  
-Verifique se o conda foi instalado corretamente:
-
-```bash
-conda --version
-```
-
-6. **Criar um ambiente chamado 'osgeo' com Python 3.10**  
+5. **Criar um ambiente chamado 'geowri'**  
 Este ambiente será utilizado para trabalhar com bibliotecas geoespaciais e científicas:
 
 ```bash
 conda create -n osgeo python=3.10 -y
 ```
 
-7. **Ativar o ambiente 'osgeo'**:
+6. **Ativar o ambiente 'osgeo'**:
 
 ```bash
 conda activate osgeo
 ```
 
-8. **Instalar pacotes geoespaciais e científicos via conda-forge**  
+7. **Instalar pacotes geoespaciais e científicos via conda-forge**  
 Instalar uma lista de pacotes que cobrem diversas funcionalidades, como processamento de dados raster, machine learning, entre outros:
 
 ```bash
@@ -98,21 +87,14 @@ conda install -c conda-forge \
   imageio Pillow pyyaml exiftool scikit-gstat tuiview -y
 ```
 
-9. **Atualizar todos os pacotes**  
+8. **Atualizar todos os pacotes**  
 Garantir que as versões mais recentes estão instaladas:
 
 ```bash
 conda update -c conda-forge --all -y
 ```
 
-10. **Limpar o cache do conda**  
-Liberar espaço em disco removendo pacotes baixados que não são mais necessários:
-
-```bash
-conda clean --all -y
-```
-
-11. **Confirmar a configuração do ambiente**  
+9. **Confirmar a configuração do ambiente**  
 Verificar se as principais bibliotecas estão instaladas e funcionando:
 
 ```bash
@@ -131,7 +113,4 @@ conda activate osgeo
 ```bash
 conda deactivate
 ```
-
-**Fim do script:**  
-A instalação e configuração foram concluídas com sucesso!
 
