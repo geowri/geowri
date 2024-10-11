@@ -26,14 +26,25 @@ Se você trabalha com **ciência de dados geoespaciais** ou está interessado em
 ## Contato
 Para mais informações sobre os projetos de geoprocessamento da WRI, entre em contato com a equipe de ciência de dados ou visite nosso [site oficial](https://geowri.org).
 
-## Installing
+## Instalação
 
-Instructions on installing RSGISLib:
+Instruções para instalar o RSGISLib:
 
 ```bash
 conda install -c conda-forge rsgislib
+```
 
-<!---
-geowri/geowri is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Se você deseja instalar um conjunto de pacotes para realizar sensoriamento remoto e análise de dados GIS em Python, os seguintes pacotes são o que eu instalo como ambiente base:
+
+```bash
+conda install -c conda-forge rsgislib gdal libgdal-arrow-parquet libgdal-fits libgdal-grib libgdal-hdf4
+```
+
+Eu às vezes encontrei conflitos entre pacotes dos canais `default` e `conda-forge` do conda, então recomendo remover o canal `default` da sua configuração e usar apenas o `conda-forge`.
+
+Também instalo os seguintes pacotes usando pip, que não estão disponíveis via conda:
+
+```bash
+pip install gsutil alphashape pysptools matplotlib-scalebar pysondb BorutaShap PyMuPDF mpl-scatter-density
+```
+
