@@ -60,13 +60,13 @@ source ~/anaconda3/bin/activate
 Este ambiente será utilizado para trabalhar com bibliotecas geoespaciais e científicas:
 
 ```bash
-conda create -n osgeo python=3.10 -y
+conda create -n osgeo python=3.12 -y
 ```
 
-6. **Ativar o ambiente 'osgeo'**:
+6. **Ativar o ambiente 'geowri'**:
 
 ```bash
-conda activate osgeo
+conda activate geowri
 ```
 
 7. **Instalar pacotes geoespaciais e científicos via conda-forge**  
@@ -95,10 +95,10 @@ conda update -c conda-forge --all -y
 ```
 
 ### Instruções Finais:
-- Para ativar o ambiente `osgeo` no futuro, use o comando:
+- Para ativar o ambiente `geowri` no futuro, use o comando:
 
 ```bash
-conda activate osgeo
+conda activate geowri
 ```
 
 - Para desativar o ambiente, use:
