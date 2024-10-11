@@ -37,7 +37,7 @@ conda install -c conda-forge rsgislib
 Se você deseja instalar um conjunto de pacotes para realizar sensoriamento remoto e análise de dados GIS em Python, os seguintes pacotes são o que eu instalo como ambiente base:
 
 ```bash
-conda install -c conda-forge rsgislib gdal libgdal-arrow-parquet libgdal-fits libgdal-grib libgdal-hdf4
+conda install -c conda-forge rsgislib gdal libgdal-arrow-parquet libgdal-fits libgdal-grib libgdal-hdf4 libgdal-hdf5 libgdal-jp2openjpeg libgdal-pg libgdal-kea libgdal-netcdf proj-data geos gsl kealib xerces-c muparser boost-cpp rios scikit-learn scikit-image imbalanced-learn scikit-plot scikit-fuzzy bayesian-optimization optuna matplotlib pandas geopandas statsmodels h5py scipy rasterio shapely networkx sqlalchemy pycurl xgboost catboost lightgbm numba pip sphinx elevation rtree tqdm jinja2 keras parallel bokeh pygal jupyterlab psutil pysal libpysal esda pyyaml netcdf4 xarray rasterstats fiona plotly python-kaleido pyod psycopg2 contextily cvxopt feather-format openpyxl SALib xlsxwriter black jupyterlab_code_formatter ruff flake8 pylint isort autopep8 pytest pytest-html coverage pytest-cov requests imageio Pillow pyyaml exiftool scikit-gstat tuiview
 ```
 
 Eu às vezes encontrei conflitos entre pacotes dos canais `default` e `conda-forge` do conda, então recomendo remover o canal `default` da sua configuração e usar apenas o `conda-forge`.
