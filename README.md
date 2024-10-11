@@ -1,7 +1,7 @@
 # Bem-vindo ao GitHub do WRI - Equipe de Ciência de Dados
 
 ## Sobre Nós
-A WRI (World Resources Institute) é uma organização global que busca soluções inovadoras para desafios ambientais críticos. Nossa equipe de **Ciência de Dados** se dedica ao **geoprocessamento** e à análise de grandes volumes de dados geoespaciais, utilizando tecnologias de ponta para transformar dados em insights práticos.
+A WRI (World Resources Institute) é uma organização global que busca soluções inovadoras para desafios ambientais críticos. Nossa equipe de **Ciência de Dados** se dedica ao **geoprocessamento** e à análise de grandes volumes de dados geoespaciais, utilizando tecnologias para transformar dados em insights práticos.
 
 ## Foco Principal
 No GitHub da nossa equipe, você encontrará ferramentas, scripts e projetos voltados para:
