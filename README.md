@@ -94,13 +94,6 @@ Garantir que as versões mais recentes estão instaladas:
 conda update -c conda-forge --all -y
 ```
 
-9. **Confirmar a configuração do ambiente**  
-Verificar se as principais bibliotecas estão instaladas e funcionando:
-
-```bash
-python -c "import geopandas, rasterio, gdal, numpy; print('Ambiente configurado com sucesso!')"
-```
-
 ### Instruções Finais:
 - Para ativar o ambiente `osgeo` no futuro, use o comando:
 
