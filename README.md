@@ -26,25 +26,112 @@ Se você trabalha com **ciência de dados geoespaciais** ou está interessado em
 ## Contato
 Para mais informações sobre os projetos de geoprocessamento da WRI, entre em contato com a equipe de ciência de dados ou visite nosso [site oficial](https://geowri.org).
 
-## Instalação
+## Script de Instalação do Anaconda e Configuração de Ambiente Geoespacial
 
-Instruções para instalar o RSGISLib:
+Este script automatiza a instalação do Anaconda e a configuração de um ambiente com pacotes geoespaciais e científicos.
 
-```bash
-conda install -c conda-forge rsgislib
-```
+### Etapas do Script:
 
-Se você deseja instalar um conjunto de pacotes para realizar sensoriamento remoto e análise de dados GIS em Python, os seguintes pacotes são o que eu instalo como ambiente base:
-
-```bash
-conda install -c conda-forge rsgislib gdal libgdal-arrow-parquet libgdal-fits libgdal-grib libgdal-hdf4 libgdal-hdf5 libgdal-jp2openjpeg libgdal-pg libgdal-kea libgdal-netcdf proj-data geos gsl kealib xerces-c muparser boost-cpp rios scikit-learn scikit-image imbalanced-learn scikit-plot scikit-fuzzy bayesian-optimization optuna matplotlib pandas geopandas statsmodels h5py scipy rasterio shapely networkx sqlalchemy pycurl xgboost catboost lightgbm numba pip sphinx elevation rtree tqdm jinja2 keras parallel bokeh pygal jupyterlab psutil pysal libpysal esda pyyaml netcdf4 xarray rasterstats fiona plotly python-kaleido pyod psycopg2 contextily cvxopt feather-format openpyxl SALib xlsxwriter black jupyterlab_code_formatter ruff flake8 pylint isort autopep8 pytest pytest-html coverage pytest-cov requests imageio Pillow pyyaml exiftool scikit-gstat tuiview
-```
-
-Eu às vezes encontrei conflitos entre pacotes dos canais `default` e `conda-forge` do conda, então recomendo remover o canal `default` da sua configuração e usar apenas o `conda-forge`.
-
-Também instalo os seguintes pacotes usando pip, que não estão disponíveis via conda:
+1. **Baixar a versão mais recente do instalador do Anaconda**  
+Aqui estamos baixando a versão de junho de 2024 do Anaconda para Linux (64-bit):
 
 ```bash
-pip install gsutil alphashape pysptools matplotlib-scalebar pysondb BorutaShap PyMuPDF mpl-scatter-density
+wget https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
 ```
+
+2. **Alterar permissões do instalador**  
+Tornar o instalador executável:
+
+```bash
+sudo chmod u+x Anaconda3-2024.06-1-Linux-x86_64.sh
+```
+
+3. **Executar o script de instalação do Anaconda**  
+Certifique-se de seguir as instruções interativas:
+
+```bash
+./Anaconda3-2024.06-1-Linux-x86_64.sh
+```
+
+4. **Ativar o Anaconda no terminal**  
+Permite usar o Anaconda imediatamente após a instalação:
+
+```bash
+source ~/anaconda3/bin/activate
+```
+
+5. **Validar a instalação do conda**  
+Verifique se o conda foi instalado corretamente:
+
+```bash
+conda --version
+```
+
+6. **Criar um ambiente chamado 'osgeo' com Python 3.10**  
+Este ambiente será utilizado para trabalhar com bibliotecas geoespaciais e científicas:
+
+```bash
+conda create -n osgeo python=3.10 -y
+```
+
+7. **Ativar o ambiente 'osgeo'**:
+
+```bash
+conda activate osgeo
+```
+
+8. **Instalar pacotes geoespaciais e científicos via conda-forge**  
+Instalar uma lista de pacotes que cobrem diversas funcionalidades, como processamento de dados raster, machine learning, entre outros:
+
+```bash
+conda install -c conda-forge \
+  rsgislib gdal libgdal-arrow-parquet libgdal-fits libgdal-grib libgdal-hdf4 \
+  libgdal-hdf5 libgdal-jp2openjpeg libgdal-pg libgdal-kea libgdal-netcdf proj-data \
+  geos gsl kealib xerces-c muparser boost-cpp rios scikit-learn scikit-image \
+  imbalanced-learn scikit-plot scikit-fuzzy bayesian-optimization optuna matplotlib \
+  pandas geopandas statsmodels h5py scipy rasterio shapely networkx sqlalchemy \
+  pycurl xgboost catboost lightgbm numba pip sphinx elevation rtree tqdm jinja2 \
+  keras parallel bokeh pygal jupyterlab psutil pysal libpysal esda pyyaml netcdf4 \
+  xarray rasterstats fiona plotly python-kaleido pyod psycopg2 contextily cvxopt \
+  feather-format openpyxl SALib xlsxwriter black jupyterlab_code_formatter ruff \
+  flake8 pylint isort autopep8 pytest pytest-html coverage pytest-cov requests \
+  imageio Pillow pyyaml exiftool scikit-gstat tuiview -y
+```
+
+9. **Atualizar todos os pacotes**  
+Garantir que as versões mais recentes estão instaladas:
+
+```bash
+conda update -c conda-forge --all -y
+```
+
+10. **Limpar o cache do conda**  
+Liberar espaço em disco removendo pacotes baixados que não são mais necessários:
+
+```bash
+conda clean --all -y
+```
+
+11. **Confirmar a configuração do ambiente**  
+Verificar se as principais bibliotecas estão instaladas e funcionando:
+
+```bash
+python -c "import geopandas, rasterio, gdal, numpy; print('Ambiente configurado com sucesso!')"
+```
+
+### Instruções Finais:
+- Para ativar o ambiente `osgeo` no futuro, use o comando:
+
+```bash
+conda activate osgeo
+```
+
+- Para desativar o ambiente, use:
+
+```bash
+conda deactivate
+```
+
+**Fim do script:**  
+A instalação e configuração foram concluídas com sucesso!
 
