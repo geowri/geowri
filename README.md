@@ -33,7 +33,7 @@ Este script automatiza a instalação do Anaconda e a configuração de um ambie
 ### Etapas do Script:
 
 1. **Baixar a versão mais recente do instalador do Anaconda**  
-O link para instalador mais recente pode ser encontrado em [Anaconda]([https://geowri.org](https://www.anaconda.com/download/success).
+O link para instalador mais recente pode ser encontrado em [Anaconda](https://www.anaconda.com/download/success).
 ```bash
 wget https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
 ```
