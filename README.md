@@ -50,8 +50,8 @@ sudo chmod u+x Anaconda3-2024.06-1-Linux-x86_64.sh
 ./Anaconda3-2024.06-1-Linux-x86_64.sh
 ```
 
-4. **Ativar o Anaconda no terminal**  
-
+4. **Ativar o Anaconda no terminal**
+Caso tenha escolhido outro caminho, altere.
 ```bash
 source ~/anaconda3/bin/activate
 ```
@@ -98,6 +98,7 @@ conda update -c conda-forge --all -y
 - Para ativar o ambiente `geowri` no futuro, use o comando:
 
 ```bash
+source ~/anaconda3/bin/activate
 conda activate geowri
 ```
 
