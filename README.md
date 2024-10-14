@@ -30,7 +30,7 @@ source ~/anaconda3/bin/activate
 Este ambiente será utilizado para trabalhar com bibliotecas geoespaciais e científicas:
 
 ```bash
-conda create -n osgeo python=3.12 -y
+conda create -n geowri python=3.12 -y
 ```
 
 6. **Ativar o ambiente 'geowri'**:
