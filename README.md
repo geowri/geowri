@@ -1,4 +1,4 @@
-# Bem-vindo ao GitHub do WRI Brasil - Equipe de Ciência de Dados
+# Bem-vindo ao GitHub do WRI Brasil | Equipe de Ciência de Dados
 
 ### Preparação do Ambiente
 
