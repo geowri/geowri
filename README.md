@@ -40,7 +40,6 @@ conda activate geowri
 ```
 
 7. **Instalar pacotes geoespaciais e científicos via conda-forge**  
-Instalar uma lista de pacotes que cobrem diversas funcionalidades, como processamento de dados raster, machine learning, entre outros:
 
 ```bash
 conda install -c conda-forge \
