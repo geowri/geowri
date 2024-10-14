@@ -1,6 +1,6 @@
 # Bem-vindo ao GitHub do WRI Brasil - Equipe de Ciência de Dados
 
-### Etapas do Script:
+### Preparação do Ambiente:
 
 1. **Baixar a versão mais recente do instalador do Anaconda**  
 O link para instalador mais recente pode ser encontrado em [Anaconda](https://www.anaconda.com/download/success).
