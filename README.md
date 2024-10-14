@@ -20,9 +20,6 @@ No GitHub da nossa equipe, você encontrará ferramentas, scripts e projetos vol
 - **Ferramentas de Análise Espacial**: Scripts para análise de cobertura do solo, cálculo de áreas restauradas e análise de biodiversidade.
 - **Integração com Banco de Dados Geoespaciais**: Scripts para conectar e trabalhar com **PostGIS** e **GeoServer**.
 
-## Como Contribuir
-Se você trabalha com **ciência de dados geoespaciais** ou está interessado em contribuir com projetos de **geoprocessamento**, este é o lugar certo! Explore nossos repositórios, abra *issues*, sugira melhorias ou faça um *fork* para contribuir com código.
-
 ## Contato
 Para mais informações sobre os projetos de geoprocessamento da WRI, entre em contato com a equipe de ciência de dados ou visite nosso [site oficial](https://geowri.org).
 
