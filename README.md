@@ -79,7 +79,7 @@ conda activate geowri
 conda deactivate
 ```
 
-# Alias para ativar o ambiente Conda
+### Alias para ativar o ambiente Conda
 - Abra o arquivo .bashrc e adicione os seguintes aliases para facilitar a ativação e desativação dos ambientes:
 ```bash
 # Alias para ativar o ambiente 'geowri'
@@ -88,6 +88,15 @@ alias geowri='source ~/anaconda3/bin/activate && conda activate geowri'
 # Alias para desativar os ambientes 'geowri' e 'base'
 alias no_geowri='conda deactivate && conda deactivate'
 ```
+- Salve e feche o arquivo, depois aplique as mudanças executando o seguinte comando:
 ```bash
 source ~/.bashrc    # Se estiver usando Bash
+```
+Para ativar o ambiente Conda geowri, execute:
+```bash
+geowri
+```
+Para desativar tanto o ambiente geowri quanto o ambiente base do Conda de uma vez, execute:
+```bash
+no_geowri
 ```
