@@ -65,7 +65,7 @@ Garantir que as versões mais recentes estão instaladas:
 conda update -c conda-forge --all -y
 ```
 
-### Instruções Finais:
+### Instruções Finais
 - Para ativar o ambiente `geowri` no futuro, use o comando:
 
 ```bash
@@ -79,7 +79,7 @@ conda activate geowri
 conda deactivate
 ```
 
-### Alias para ativar o ambiente Conda
+### Atalho para ativar o ambiente geowri (Opcional)
 - Abra o arquivo .bashrc e adicione os seguintes aliases para facilitar a ativação e desativação dos ambientes:
 ```bash
 # Alias para ativar o ambiente 'geowri'
